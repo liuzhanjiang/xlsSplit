@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+<link rel="stylesheet" href="styles/windowBorder.css" />
+<link rel="stylesheet" href="styles/main.css" /> 
+</head> 
+<body> 
+    <!--标题栏按钮-->
+  <div command="window-caption" >xlsSplit_info</div>
+   <!--标题栏按钮-->
+	
+  <!--用于拖动改变窗口大小的边框-->
+  <div style="behavior:windowSizer" border="4px" corner="8px" >
+    <div sizer="left_top"></div>
+    <div sizer="left"></div>
+    <div sizer="left_bottom"></div>
+    <div sizer="top"></div>
+    <div sizer="bottom"></div>
+    <div sizer="right_top"></div>
+    <div sizer="right"></div>
+    <div sizer="right_bottom"></div>
+  </div>
+
+  <div #main>
+    <img id="progress" src="progress.gif" style= "visibility = 'hidden'">
+	  <plaintext id="plaintext" ></plaintext>
+	  <button id="submit" style= "visibility = 'hidden'">确定</button>
+  </div>
+</body>
+</html>

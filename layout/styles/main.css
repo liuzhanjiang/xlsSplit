@@ -1,0 +1,15 @@
+﻿#main{
+  height:*;
+  padding:20px;
+}
+
+#author{
+  flow:vertical;
+  height:*;
+}
+#author-text{
+  position:relative; 
+  height:*; 
+  padding:10px;
+  vertical-align:bottom;
+}

@@ -1,0 +1,62 @@
+﻿@const BORDER_COLOR: #245E82; 
+@const CLIENT_COLOR: #EFF7FC;  
+
+body {
+  margin: 0; 
+  border: 1px solid @BORDER_COLOR; 
+  border-radius: 4px;
+  background: @CLIENT_COLOR;
+} 
+
+div[command=window-caption] {
+  behavior:windowCommand;
+  width: 100%%;
+  border-radius: 4px 4px 0 0; /*圆角*/ 
+  height:21px;
+  vertical-align: middle;
+  background: rgba(0, 128, 200, .9) transparent rgba(0, 128, 200, .2) rgba(0, 128, 200, .9) ;
+}
+
+#window-caption-buttons{
+  behavior:windowCommand;
+  position: absolute;
+  right: 1px;
+  top: 1;
+  height: 19px; 
+}
+
+#window-caption-buttons [command] {  
+  float: left;
+  height: 19px;
+  foreground-image:url( images/caption-buttons.png);
+  foreground-repeat:no-repeat;  
+  transition: blend;
+}
+
+#window-caption-buttons [command]:hover {
+  background: rgba(0, 128, 255, .5) rgba(0, 128, 255, .5) transparent transparent;
+}
+
+#window-caption-buttons [command]:active {
+  background: rgba(0, 128, 255, .9) rgba(0, 128, 255, .9) transparent transparent;
+}
+
+[command=window-min] {
+  width: 24x;
+  foreground-position: 0 0;
+}
+
+[command=window-max]  {
+  width: 24px;
+  foreground-position: -24px 0;
+}
+
+[command=window-restore]  {
+  width: 24px;
+  foreground-position: -72px 0;
+}
+
+[command=window-close]  {
+  width: 24px;
+  foreground-position: -48px 0;
+}

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project ver="10" name="xlsSplit" libEmbed="true" icon="" CompanyName="" FileDescription="" LegalCopyright="" ProductName="" InternalName="" FileVersion="0.0.1.3" ProductVersion="0.0.1.3" publishDir="/Publish/" ui="win" output="xlsSplit.exe" dstrip="false">
+	<file name="main.aau" path="main.aau"/>
+	<folder name="资源文件(web.layout)" path="layout" comment="" embed="true">
+		<file name="windowBorder.html" path="layout\windowBorder.html" comment="layout\windowBorder.html"/>
+		<file name="frmRound.html" path="layout\frmRound.html" comment="layout\frmRound.html"/>
+		<folder name="styles" path="layout\styles" comment="layout\styles" embed="false">
+			<file name="windowBorder.css" path="layout\styles\windowBorder.css" comment="layout\styles\windowBorder.css"/>
+			<file name="main.css" path="layout\styles\main.css" comment="layout\styles\main.css"/>
+			<folder name="images" path="layout\styles\images" comment="layout\styles\images">
+				<file name="caption-buttons.png" path="layout\styles\images\caption-buttons.png" comment="layout\styles\images\caption-buttons.png"/>
+			</folder>
+		</folder>
+	</folder>
+</project>

@@ -1,0 +1,20 @@
+﻿<html>
+<head>
+<link rel="stylesheet" href="styles/windowBorder.css" />
+<link rel="stylesheet" href="styles/main.css" /> 
+</head> 
+<body> 
+  <include src="windowBorder.html" /> 
+  <div #main>
+  
+  	  <p>分割文件<input type="file" #sourcefile filter="Excel files:*.xls,*.XLSX;All files:*.*" novalue="(select file)"/></p>
+   	  <p>指定行数<input type="text" #maxnum /></p>
+ 	  <p>文件模版<input type="file" novalue="若不指定，可省略"  #template filter="Excel files:*.xls,*.XLSX;All files:*.*" /></p>
+	  <p>存放路径<input type="folder-path" #dir /></p>
+	  <div #filepath></div>
+	  <button #submit>分割</button>
+	  <plaintext id="procinfo" style="margin:10 0 0 0"></plaintext>
+	  
+  </div>
+</body>
+</html>
